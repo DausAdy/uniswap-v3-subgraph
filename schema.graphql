@@ -207,6 +207,9 @@ type Position @entity {
   tickUpper: Tick!
   # total position liquidity
   liquidity: BigInt!
+  # token URI of the NFT (see ERC721Metadata interface)
+  tokenURIType: String!
+  tokenURI: String!
   # amount of token 0 ever deposited to position
   depositedToken0: BigDecimal!
   # amount of token 1 ever deposited to position
